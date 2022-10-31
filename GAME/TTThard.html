@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="google" content="notranslate">
+		<link rel="stylesheet" href="styleTTTeasyhard.css">
+		<title>Tic Tac Toe</title>
+	</head>
+	<body>
+		<h1 class="header"><span style="color:#0088ff;">Tic</span><span style="color: #f70000;">Tac</span><span style="color: #06ff00;">Toe</span></h1>
+		<br>
+		<label for="inputList">Level:</label>
+		<select name="inputList" onchange="location = this.value;">
+			<option value="TTThard.html">Hard</option>
+			<option value="TTTeasy.html">Easy</option>
+		</select>
+		<table class="container">
+			<tr>
+				<td class="cell" id="0"></td>
+				<td class="cell" id="1"></td>
+				<td class="cell" id="2"></td>
+			</tr>
+			<tr>
+				<td class="cell" id="3"></td>
+				<td class="cell" id="4"></td>
+				<td class="cell" id="5"></td>
+			</tr>
+			<tr>
+				<td class="cell" id="6"></td>
+				<td class="cell" id="7"></td>
+				<td class="cell" id="8"></td>
+			</tr>
+		</table>
+		<div class="endgame">
+			<div class="text"></div>
+		</div>
+		<button onClick="startGame()">Replay</button>
+		<script src="scriptTTThard.js"></script>
+	</body>
+</html>
