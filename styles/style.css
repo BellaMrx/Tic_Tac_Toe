@@ -1,0 +1,276 @@
+* {
+	margin: 12px;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body {
+	text-align: center;
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
+	font-family: Consolas;
+}
+
+.header {
+	font-size: 5vw;
+}
+
+.tic {
+	color: #0088ffc2;
+	text-shadow: 0px 0px 5px #fdfdfe, 0px 0px 10px #fdfdfe, 0px 0px 10px #fdfdfe,
+	  0px 0px 20px #fdfdfe;
+}
+
+.tac {
+	color: #f70000ba;
+	text-shadow: 0px 0px 5px #fdfdfe, 0px 0px 10px #fdfdfe, 0px 0px 10px #fdfdfe,
+	  0px 0px 20px #fdfdfe;
+}
+
+.toe {
+	color: #9d9997;
+	text-shadow: 0px 0px 5px #fdfdfe, 0px 0px 10px #fdfdfe, 0px 0px 10px #fdfdfe,
+	  0px 0px 20px #fdfdfe;
+}
+
+
+
+#link {
+	font-size: 1.5vw;
+	margin: 0 0 0 5px; 
+}
+
+/* for Twitter, GitHub icon */
+.fa {
+	font-size: 1.5vw;
+	text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+}
+
+.fa-github {
+	color: #000000;
+}
+
+span {
+	color: aliceblue;
+}
+
+
+
+label {
+	font-size: 1.2vw;
+	font-weight: bold;
+	color: #fff;
+}
+
+select {
+	border-radius: 0.3vw;
+	color: #8c0585b7;
+	background-color: #fff;
+	font-size: 1.3vw;
+}
+
+option {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+
+
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	top: 200px;
+}
+
+td {
+	border:  2px solid #8c0585b7;
+	height:  100px;
+	width:  100px;
+	text-align:  center;
+	vertical-align:  middle;
+	font-weight: bold;
+	font-size:  70px;
+	cursor: pointer;
+}
+
+.cell {
+	background-color: #d6d6d6;
+}
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+.endgame {
+	display: none;
+	width: 200px;
+	top: 265px;
+	background-color: #77e7dce2;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-size: 2em;
+}
+
+
+
+
+
+/* replay button */
+button {
+	margin-left: 1vw;
+	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem #fff;
+	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem #fff;
+	box-shadow: 0rem 0rem 1.25rem 0.2rem #fff;}
+
+.glow-on-hover {
+    width: 6vw;
+    height: auto;
+    border: none;
+    outline: none;
+    color: #8c0585b7;
+	font-size: 1.3vw;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #00ffd9, #00ffa2, #00d9ff, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #fff;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 1200px) {
+	.header {
+		font-size: 12vw;
+	}
+	
+	
+	#link {
+		font-size: 4vw;
+		margin: 0 0 0 5px; 
+	}
+	
+	/* for Twitter, GitHub icon */
+	.fa {
+		font-size: 4vw;
+		text-decoration: none;
+	}
+	
+	.fa:hover {
+		opacity: 0.7;
+		text-decoration: none;
+	}
+	
+	.fa-twitter {
+		color: #55ACEE;
+	}
+	
+	.fa-github {
+		color: #000000;
+	}
+	
+	span {
+		color: aliceblue;
+	}
+	
+	
+	
+	label {
+		font-size: 4.2vw;
+		font-weight: bold;
+		color: #fff;
+	}
+	
+	select {
+		border-radius: 0.3vw;
+		color: #8c0585b7;
+		background-color: #fff;
+		font-size: 4.3vw;
+	}
+	
+	option {
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+	}
+
+	.glow-on-hover {
+		width: 17vw;
+		height: auto;
+		font-size: 4.3vw;
+	}
+}

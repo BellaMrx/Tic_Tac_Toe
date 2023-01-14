@@ -5,16 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="google" content="notranslate">
-		<link rel="stylesheet" href="styleTTT.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles/style.css">
 		<title>Tic Tac Toe</title>
 	</head>
 	<body>
-		<h1 class="header"><span style="color:#0088ff;">Tic</span><span style="color: #f70000;">Tac</span><span style="color: #06ff00;">Toe</span></h1>
+		<h1 class="header"><span class="tic">Tic</span><span class="tac">Tac</span><span class="toe">Toe</span></h1>
+		<a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span id="link">@bella_mrx</span></a>
+		<a href="https://github.com/BellaMrx" class="fa fa-github"><span id="link">BellaMrx</span></a>
 		<br>
 		<label for="inputList">Level:</label>
 		<select name="inputList" onchange="location = this.value;">
-			<option value="index.html">Easy</option>
 			<option value="TTThard.html">Hard</option>
+			<option value="index.html">Easy</option>
 		</select>
 		<table class="container">
 			<tr>
@@ -36,7 +39,7 @@
 		<div class="endgame">
 			<div class="text"></div>
 		</div>
-		<button onClick="startGame()">Replay</button>
-		<script src="scriptTTTeasy.js"></script>
+		<button class="glow-on-hover" onClick="startGame()">Replay</button>
+		<script src="scripts/scriptTTThard.js"></script>
 	</body>
 </html>
