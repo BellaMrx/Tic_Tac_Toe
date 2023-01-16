@@ -74,7 +74,7 @@ function gameOver(gameWon) {
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
 	}
-	resultDisplay(gameWon.player == humanPlayer ? "You win!" : "You lose.");
+	resultDisplay(gameWon.player == humanPlayer ? "You win!" : "You lose!");
 }
 
 

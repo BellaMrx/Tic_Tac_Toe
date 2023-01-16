@@ -10,15 +10,18 @@
 		<title>Tic Tac Toe</title>
 	</head>
 	<body>
-		<h1 class="header"><span class="tic">Tic</span><span class="tac">Tac</span><span class="toe">Toe</span></h1>
-		<a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span id="link">@bella_mrx</span></a>
-		<a href="https://github.com/BellaMrx" class="fa fa-github"><span id="link">BellaMrx</span></a>
-		<br>
-		<label for="inputList">Level:</label>
-		<select name="inputList" onchange="location = this.value;">
-			<option value="index.html">Easy</option>
-			<option value="TTThard.html">Hard</option>
-		</select>
+		<div class="container">
+			<h1 class="header"><span class="tic">Tic</span><span class="tac">Tac</span><span class="toe">Toe</span></h1>
+			<a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span id="link">@bella_mrx</span></a>
+			<a href="https://github.com/BellaMrx" class="fa fa-github"><span id="link">BellaMrx</span></a>
+			<br>
+			<label for="inputList">Level:</label>
+			<select name="inputList" onchange="location = this.value;">
+				<option value="index.html">Easy</option>
+				<option value="TTThard.html">Hard</option>
+			</select>
+			<button class="glow-on-hover" onClick="startGame()">Replay</button>
+		</div>
 		<table class="container">
 			<tr>
 				<td class="cell" id="0"></td>
@@ -39,7 +42,6 @@
 		<div class="endgame">
 			<div class="text"></div>
 		</div>
-		<button class="glow-on-hover" onClick="startGame()">Replay</button>
 		<script src="scripts/scriptTTTeasy.js"></script>
 	</body>
 </html>

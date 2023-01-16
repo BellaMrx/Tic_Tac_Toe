@@ -10,6 +10,10 @@ body {
 	font-family: Consolas;
 }
 
+.container {
+	margin-top: 50px;
+}
+
 .header {
 	font-size: 5vw;
 }
@@ -215,7 +219,14 @@ button {
 
 /* mobile */
 @media only screen and (max-width: 1200px) {
+	* {
+		margin: auto;
+		padding: 0;
+		box-sizing: border-box;
+		}
+
 	.header {
+		margin: 40px 0 20px 0;
 		font-size: 12vw;
 	}
 	
@@ -261,6 +272,7 @@ button {
 		color: #8c0585b7;
 		background-color: #fff;
 		font-size: 4.3vw;
+		margin-top: 20px;
 	}
 	
 	option {
