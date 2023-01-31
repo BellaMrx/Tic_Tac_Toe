@@ -38,7 +38,7 @@ body {
 
 
 
-#link {
+.link {
 	font-size: 1.5vw;
 	margin: 0 0 0 5px; 
 }
@@ -47,6 +47,7 @@ body {
 .fa {
 	font-size: 1.5vw;
 	text-decoration: none;
+	text-shadow: 2px 2px 4px #000;
 }
 
 .fa:hover {
