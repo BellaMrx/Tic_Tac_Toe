@@ -10,7 +10,7 @@ Have fun
 
 Preview
 
-![Preview](PreviewTTT.png)
+![Preview](PreviewTTT.PNG)
 
 
 Mobile View
