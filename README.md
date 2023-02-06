@@ -6,13 +6,13 @@ Save the files in a folder and open the file "index.html" in your browser.
 
 Have fun
 
- Video on [YouTube](https://www.youtube.com/watch?v=qPKom9IyoG4)
+ Video on [YouTube](https://youtu.be/wIiOZdA6n08)
 
 Preview
 
-![Preview](PreviewTTT.PNG)
+![Preview](PreviewTTT.png)
 
 
 Mobile View
 
-![Preview](PreviewTTTmobileView.PNG)
+![Preview](PreviewMobileTTT.PNG)

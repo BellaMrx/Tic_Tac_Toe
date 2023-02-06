@@ -8,6 +8,7 @@ body {
 	text-align: center;
 	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	font-family: Consolas;
+	text-shadow: 2px 2px 4px #000;
 }
 
 .container {
@@ -92,8 +93,9 @@ table {
 	border-collapse: collapse;
 	position: absolute;
 	left: 50%;
-	margin-left: -155px;
-	top: 200px;
+	margin-left: -150px;
+	top: auto;
+	box-shadow: 5px 10px 18px #000;
 }
 
 td {
@@ -130,7 +132,7 @@ table tr td:last-child {
 .endgame {
 	display: none;
 	width: 200px;
-	top: 300px;
+	top: 420px;
 	background-color: #77e7dce2;
 	position: absolute;
 	left: 50%;
@@ -285,5 +287,9 @@ button {
 		width: 17vw;
 		height: auto;
 		font-size: 4.3vw;
+	}
+
+	.endgame {
+		top: 300px;
 	}
 }
